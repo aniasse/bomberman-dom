@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Bomberman back end",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test --reporter spec",
+    "test-cov": "mocha test --require blanket --reporter mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "author": "Helena",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "parcel": "^2.11.0",
+    "process": "^0.11.10",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.3"
+  },
+  "dependencies": {
+    "bufferutil": "^4.0.8",
+    "timers": "^0.1.1",
+    "utf-8-validate": "^6.0.3",
+    "ws": "^8.17.0"
+  },
+  "keywords": [
+    "bomberman"
+  ]
+}
